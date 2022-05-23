@@ -25,6 +25,7 @@ export interface User {
     _id: string | number;
     name?: string;
     avatar?: string | renderFunction;
+    timeZone: string;
 }
 export interface Reply {
     title: string;

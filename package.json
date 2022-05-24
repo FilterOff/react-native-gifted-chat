@@ -107,7 +107,7 @@
     "react-native-communications": "^2.2.1",
     "react-native-iphone-x-helper": "^1.2.1",
     "react-native-lightbox": "^0.8.1",
-    "react-native-parsed-text": "https://github.com/FilterOff/react-native-parsed-text.git#f9e86f14f6c57b7cba2e853e006a11be8cdc1b4f",
+    "react-native-parsed-text": "https://github.com/FilterOff/react-native-parsed-text.git#v0.0.23",
     "react-native-typing-animation": "^0.1.7",
     "uuid": "3.4.0"
   },

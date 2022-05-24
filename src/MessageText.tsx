@@ -68,7 +68,7 @@ export interface MessageTextProps<TMessage extends IMessage> {
 
 export default class MessageText<
   TMessage extends IMessage = IMessage
-> extends React.Component<MessageTextProps<TMessage>> {
+  > extends React.Component<MessageTextProps<TMessage>> {
   static contextTypes = {
     actionSheet: PropTypes.func,
   }
@@ -172,7 +172,7 @@ export default class MessageText<
         style={[
           styles[this.props.position].container,
           this.props.containerStyle &&
-            this.props.containerStyle[this.props.position],
+          this.props.containerStyle[this.props.position],
         ]}
       >
         <ParsedText
@@ -188,6 +188,7 @@ export default class MessageText<
             { type: 'email', style: linkStyle, onPress: this.onEmailPress },
           ]}
           childrenProps={{ ...this.props.textProps }}
+          currentMessage={this.props.currentMessage}
         >
           {this.props.currentMessage!.text}
         </ParsedText>
